@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+:root {
+  --main-color: #fec814;
+  --dark-main: #a98912;
+  --black: #222;
+  --gray: #a2a2a2;
+  --white: #eee;
+  --bg-color: #fff;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+html {
+  font-size: 65%;
+  overflow-x: hidden;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+html::-webkit-scrollbar-thumb {
+  background-color: var(--main-color);
+}
+
+/* header section */
+.header {
+  padding: 1rem 3rem;
+  display: flex;
+  width: 100%;
+  position: sticky;
+  color: var(--black);
+  background-color: var(--bg-color);
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  width: 10rem;
+}
+.header .logo img {
+  width: 100%;
+}
+.header nav a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 2rem;
+  margin: 0 2rem;
+}
+
+.header nav a:hover {
+  color: var(--main-color);
+}
+section {
+  padding: 5rem 5rem;
+}
+.section-heading {
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+}
+/* Home section */
+.home {
+  background-image: linear-gradient(to right, #ffd115, #eed66d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+.home .home-content {
+  flex: 0.6 6rem;
+  color: var(--black);
+  text-align: center;
+}
+.home .home-content h2 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+.home .home-content h2 span {
+  font-size: 7rem;
+  font-weight: 800;
+}
+.home .home-content p {
+  font-size: 3rem;
+  padding: 1rem 0;
+  font-weight: 500;
+}
+.btn {
+  padding: 1rem 2rem;
+  background-color: var(--black);
+  color: var(--white);
+  font-size: 1.5rem;
+  border: var(--black) solid 1px;
+  transition: 0.2s;
+  font-weight: 700;
+}
+.btn:hover {
+  color: var(--black);
+  background-color: var(--white);
+  cursor: pointer;
+}
+.home .image {
+  flex: 0.4 8rem;
+}
+.home .image img {
+  width: 100%;
+}
