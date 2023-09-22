@@ -19,6 +19,7 @@
 html {
   font-size: 65%;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar {
@@ -34,6 +35,10 @@ html::-webkit-scrollbar-thumb {
   display: flex;
   width: 100%;
   position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 250;
   color: var(--black);
   background-color: var(--bg-color);
   align-items: center;
@@ -49,19 +54,33 @@ html::-webkit-scrollbar-thumb {
   text-decoration: none;
   color: var(--black);
   font-size: 2rem;
+  font-weight: 700;
   margin: 0 2rem;
 }
 
 .header nav a:hover {
   color: var(--main-color);
 }
+.header nav a:nth-child(3) {
+  color: var(--black);
+  padding: 0.7rem;
+  background-color: var(--main-color);
+  border: var(--main-color) solid 1px;
+  border-radius: 1rem;
+  transition: 0.2s;
+}
+.header nav a:nth-child(3):hover {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+}
 section {
-  padding: 5rem 5rem;
+  padding: 3rem 4rem;
 }
 .section-heading {
   text-align: center;
   font-size: 5rem;
   font-weight: 700;
+  padding: 1rem;
 }
 /* Home section */
 .home {
@@ -69,7 +88,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 85vh;
 }
 .home .home-content {
   flex: 0.6 6rem;
@@ -105,7 +124,99 @@ section {
 }
 .home .image {
   flex: 0.4 8rem;
+  transition: 1s;
 }
 .home .image img {
   width: 100%;
+}
+.home .image:hover {
+  scale: 1.2;
+}
+/* Features section */
+.features {
+  display: flex;
+  align-items: center;
+}
+.features .image {
+  width: 90%;
+  transition: 1s;
+}
+.features .image:hover {
+  scale: 1.2;
+}
+.features .image img {
+  width: 100%;
+}
+.features .features-container {
+  display: flex;
+  margin: 0 5rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.features .features-container .feature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.features .features-container .feature i {
+  font-size: 5rem;
+  width: 10rem;
+  height: 10rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-color);
+  border: var(--main-color) solid 1px;
+  border-radius: 3rem;
+}
+.features .features-container .feature p {
+  font-size: 2.5rem;
+  margin-left: 1rem;
+  line-height: 1;
+  font-weight: 500;
+}
+.cover-photo {
+  background-image: url(images/Realme-Smart-Watch-53.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 35rem;
+}
+.footer {
+  background-image: linear-gradient(to right, #111, #302d2d);
+  padding: 2rem 5rem;
+  color: var(--white);
+  text-align: center;
+}
+.footer .footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer .footer-content .image {
+  width: 20rem;
+}
+.footer .footer-content .image img {
+  width: 100%;
+}
+.footer .footer-content .links {
+  flex: 0.6 5rem;
+}
+.footer .footer-content .links a {
+  padding: 0 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--white);
+  text-align: right;
+}
+.footer .footer-content .links a:hover {
+  color: var(--main-color);
+}
+.footer .copyright {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
