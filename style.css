@@ -28,7 +28,9 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-thumb {
   background-color: var(--main-color);
 }
-
+img {
+  width: 100%;
+}
 /* header section */
 .header {
   padding: 1rem 3rem;
@@ -46,9 +48,6 @@ html::-webkit-scrollbar-thumb {
 }
 .header .logo {
   width: 10rem;
-}
-.header .logo img {
-  width: 100%;
 }
 .header nav a {
   text-decoration: none;
@@ -126,9 +125,6 @@ section {
   flex: 0.4 8rem;
   transition: 1s;
 }
-.home .image img {
-  width: 100%;
-}
 .home .image:hover {
   scale: 1.2;
 }
@@ -143,9 +139,6 @@ section {
 }
 .features .image:hover {
   scale: 1.2;
-}
-.features .image img {
-  width: 100%;
 }
 .features .features-container {
   display: flex;
@@ -186,6 +179,63 @@ section {
   background-attachment: fixed;
   height: 35rem;
 }
+
+.pricing .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 2rem;
+}
+.pricing .box-container .box {
+  width: 40rem;
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing .box-container .box .image {
+  width: 80%;
+  transition: 0.5s ease;
+}
+.pricing .box-container .box:nth-child(2) .image img {
+  filter: hue-rotate(250deg);
+}
+.pricing .box-container .box:nth-child(3) .image img {
+  filter: hue-rotate(50deg);
+}
+.pricing .box-container .box:hover .image {
+  transform: rotate(45deg);
+}
+.pricing .box-container .box .content {
+  padding: 2rem;
+  background-color: #eee;
+  border-radius: 2rem;
+  text-align: center;
+}
+.pricing .box-container .box .content h2 {
+  font-size: 2rem;
+}
+.pricing .box-container .box .content p {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+.pricing .box-container .box .content .price {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 2rem;
+}
+.pricing .box-container .box .content .btn {
+  color: var(--black);
+  background-color: var(--main-color);
+  border: var(--main-color) solid 2px;
+  outline: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+}
+.pricing .box-container .box .content .btn:hover {
+  background-color: var(--bg-color);
+}
 .footer {
   background-image: linear-gradient(to right, #111, #302d2d);
   padding: 2rem 5rem;
@@ -200,9 +250,7 @@ section {
 .footer .footer-content .image {
   width: 20rem;
 }
-.footer .footer-content .image img {
-  width: 100%;
-}
+
 .footer .footer-content .links {
   flex: 0.6 5rem;
 }
