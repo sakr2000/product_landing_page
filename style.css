@@ -282,8 +282,23 @@ section {
   section {
     padding: 2rem 3rem;
   }
+  .home .home-content h2 {
+    font-size: 4rem;
+  }
+  .home .home-content h2 span {
+    font-size: 5rem;
+  }
+  .home .home-content p {
+    font-size: 2rem;
+  }
   .features .image {
     display: none;
+  }
+  .footer .footer-content .links a {
+    display: block;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
   }
 }
 @media (max-width: 770px) {
@@ -325,9 +340,6 @@ section {
   .home .home-content h2 span {
     font-size: 4rem;
   }
-  .home .home-content p {
-    font-size: 2rem;
-  }
   .features .features-container {
     width: 50%;
     padding: 0 1rem;
@@ -343,11 +355,5 @@ section {
 @media (max-width: 670px) {
   .footer .footer-content {
     flex-direction: column;
-  }
-  .footer .footer-content .links a {
-    display: block;
-    margin-top: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
   }
 }
