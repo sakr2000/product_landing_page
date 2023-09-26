@@ -119,6 +119,7 @@ section {
   background-color: var(--black);
   color: var(--white);
   font-size: 1.5rem;
+  margin-top: 2rem;
   border: var(--black) solid 1px;
   transition: 0.2s;
   font-weight: 700;
@@ -188,7 +189,6 @@ section {
 
 .pricing .box-container {
   display: grid;
-  margin: auto;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   gap: 4rem;
   justify-items: center;
@@ -365,6 +365,38 @@ section {
   }
   .pricing .box-container .box .content p {
     font-size: 1.2rem;
-    line-height: 1;
+  }
+  .cover-photo {
+    background-attachment: scroll;
+  }
+}
+@media (max-width: 380px) {
+  section {
+    padding: 1rem;
+  }
+  .features .features-container .feature {
+    width: 25rem;
+  }
+  .features .features-container .feature i {
+    font-size: 3rem;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 2rem;
+  }
+  .pricing .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+  .pricing .box-container .box {
+    width: 25rem;
+    height: 30rem;
+  }
+  .pricing .box-container .box .content h2 {
+    font-size: 1.5rem;
+  }
+  .pricing .box-container .box .content p {
+    font-size: 1.2rem;
+  }
+  .footer {
+    margin-top: 5rem;
   }
 }
