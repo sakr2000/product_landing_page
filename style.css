@@ -356,4 +356,15 @@ section {
   .footer .footer-content {
     flex-direction: column;
   }
+  .pricing .box-container .box {
+    width: 30rem;
+    height: 40rem;
+  }
+  .pricing .box-container .box .content h2 {
+    font-size: 1.5rem;
+  }
+  .pricing .box-container .box .content p {
+    font-size: 1.2rem;
+    line-height: 1;
+  }
 }
